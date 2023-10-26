@@ -1,0 +1,12 @@
+-- 코드를 입력하세요
+SELECT
+    HOUR(DATETIME) AS HOURS,
+    count(DATETIME)
+FROM
+    ANIMAL_OUTS
+GROUP BY
+    HOUR(DATETIME)
+HAVING 
+    HOURS >= 9 AND HOURS <= 19
+ORDER BY
+    1;
