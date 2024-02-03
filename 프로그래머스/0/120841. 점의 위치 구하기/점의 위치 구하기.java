@@ -5,7 +5,7 @@ class Solution {
         int y = dot[1];
         
         if(0 < x) {
-            answer = 0 < y ? 1 :  4;
+            answer = 0 < y ? 1 : 4;
         } else if (0 > x) {
             answer = 0 < y ? 2 : 3;
         }
